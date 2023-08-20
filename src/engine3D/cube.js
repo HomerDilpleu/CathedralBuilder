@@ -15,6 +15,7 @@ game.engine3D.cube = {
         let position = this.position
         let size = this.size
         let frontStyle = this.frontStyle
+        let topStyle = this.topStyle
         let bottomStyle = this.bottomStyle
         let leftStyle = this.leftStyle
         let rightStyle = this.rightStyle
@@ -54,9 +55,9 @@ game.engine3D.cube = {
             shape.projectedPoints = []
             shape.projectedPoints.push(projectedFrontTopLeft, projectedFrontTopRight, projectedBackTopRight, projectedBackTopLeft)
             shape.closeShape = true
-            shape.lineWidth = bottomStyle.lineWidth
-            shape.strokeStyle = bottomStyle.strokeStyle
-            shape.fillStyle = bottomStyle.fillStyle
+            shape.lineWidth = topStyle.lineWidth
+            shape.strokeStyle = topStyle.strokeStyle
+            shape.fillStyle = topStyle.fillStyle
             shape.draw(ctx)
         }
         // Draw bottom face
@@ -74,19 +75,19 @@ game.engine3D.cube = {
             shape.projectedPoints = []
             shape.projectedPoints.push(projectedFrontDownLeft, projectedBackDownLeft, projectedBackTopLeft, projectedFrontTopLeft)
             shape.closeShape = true
-            shape.lineWidth = bottomStyle.lineWidth
-            shape.strokeStyle = bottomStyle.strokeStyle
-            shape.fillStyle = bottomStyle.fillStyle
+            shape.lineWidth = leftStyle.lineWidth
+            shape.strokeStyle = leftStyle.strokeStyle
+            shape.fillStyle = leftStyle.fillStyle
             shape.draw(ctx)
         }
-        // Draw left face
+        // Draw right face
         if (position.x + size.x / 2 < vp.x) {
             shape.projectedPoints = []
             shape.projectedPoints.push(projectedFrontTopRight, projectedFrontDownRight, projectedBackDownRight, projectedBackTopRight)
             shape.closeShape = true
-            shape.lineWidth = bottomStyle.lineWidth
-            shape.strokeStyle = bottomStyle.strokeStyle
-            shape.fillStyle = bottomStyle.fillStyle
+            shape.lineWidth = rightStyle.lineWidth
+            shape.strokeStyle = rightStyle.strokeStyle
+            shape.fillStyle = rightStyle.fillStyle
             shape.draw(ctx)
         }        
     }
