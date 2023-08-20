@@ -1,0 +1,6 @@
+//////////////////////
+// Start scene 
+//////////////////////
+game.scenes.boot.start = function() {
+    
+}

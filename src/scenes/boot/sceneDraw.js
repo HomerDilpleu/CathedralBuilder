@@ -1,0 +1,6 @@
+//////////////////////
+// Draw scene
+//////////////////////
+game.scenes.boot.draw = function() {
+    
+}
