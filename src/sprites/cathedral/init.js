@@ -5,18 +5,22 @@ game.sprites.cathedral.init = function() {
     this.height = 630
     this.x = 865
     this.y = 390
+    this.scaleX = 1
+    this.scaleY = 1
     this.drawBoundaries=true
 
     // Define additional properties
+    // Size
+    this.size = {x: 60, y: 60, z: 120}
+    this.stoneSize = {x:10, y:10, z:0.25}
+    // Structure and build progress
     this.structure = []
-    this.size = {
-        x: 60,
-        y: 60,
-        z: 60
-    }
-    this.canvas= {ctx:{}, htmlRef: {}}
     this.curStone = 0
     this.builtStones = 0
+    // Canvas
+    this.canvas= {ctx:{}, htmlRef: {}}
+    // Camera offset
+    this.offSet = 100
 
     // Create the rendering canvas
     this.createCanvas()
