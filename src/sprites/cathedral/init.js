@@ -20,7 +20,7 @@ game.sprites.cathedral.init = function() {
     // Canvas
     this.canvas= {ctx:{}, htmlRef: {}}
     // Camera offset
-    this.offSet = 100
+    this.offSet = 110
 
     // Create the rendering canvas
     this.createCanvas()
