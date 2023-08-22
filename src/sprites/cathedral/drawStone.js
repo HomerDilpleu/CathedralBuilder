@@ -19,7 +19,7 @@ game.sprites.cathedral.drawStone = function(ctx, stone) {
     // Define stone size
     cube.size = {x:stoneSize.x, y:stoneSize.y, z:stoneSize.z}
     // Calculate stone coordinates
-    stoneCoordinates = {
+    let stoneCoordinates = {
         x: stone.x * cube.size.x,
         y: spriteHeight - stone.y * cube.size.y,
         z: stone.z * cube.size.z

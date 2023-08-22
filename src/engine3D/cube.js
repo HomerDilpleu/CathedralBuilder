@@ -3,7 +3,8 @@
 // render a cube
 //////////////////////
 game.engine3D.cube = {
-    position: {x:100, y:100, z:0}, // down left point
+    // down left point
+    position: {x:100, y:100, z:0}, 
     size: {x:100, y:100, z:1},
     frontStyle: {lineWidth: 1, strokeStyle: 'black', fillStyle: 'grey'},
     topStyle: {lineWidth: 1, strokeStyle: 'black', fillStyle: 'grey'},

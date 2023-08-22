@@ -16,8 +16,8 @@ game = {
 window.addEventListener("load", (event) => {
     let loading = document.getElementById("loading")
     loading.remove()
-    mge.game.width = 1280//1600//
-    mge.game.height = 720//900//
+    mge.game.width = 1280
+    mge.game.height = 720
     mge.game.start(game.scenes.boot)
   }
 )
