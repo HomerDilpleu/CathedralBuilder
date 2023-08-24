@@ -2,7 +2,11 @@
 // Update scene
 //////////////////////
 game.scenes.main.update = function() {
+
+    // Updae click buttons
+    game.sprites.click.cloneExecuteForEach('update')
     
+    /*
     // TO REMOVE: build stones
     game.sprites.cathedral.buildStones(1)
 
@@ -17,5 +21,6 @@ game.scenes.main.update = function() {
     if (game.sprites.cathedral.builtStones >= 10000 && game.sprites.cathedral.offSet == 80) {
         game.sprites.cathedral.changeOffSet(0)
     }
+    */
 
 }

@@ -7,7 +7,14 @@ game = {
     },
     engine3D:{},
     sprites:{
-      cathedral: mge.game.createSprite()
+      cathedral: mge.game.createSprite(),
+      click: mge.game.createSprite()
+    },
+    variables:{
+      rockStock:0,
+      stoneStock:0,
+      stoneBuilt:0,
+      stonesAvailable:0
     }
     
 }
