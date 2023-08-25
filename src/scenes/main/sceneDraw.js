@@ -18,5 +18,6 @@ game.scenes.main.draw = function() {
     //////////////////////////////////
     game.sprites.cathedral.draw()
     game.sprites.click.cloneExecuteForEach('draw')
+    game.sprites.build.draw()
     
 }

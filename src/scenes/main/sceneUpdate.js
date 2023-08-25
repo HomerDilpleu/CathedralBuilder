@@ -5,7 +5,10 @@ game.scenes.main.update = function() {
 
     // Updae click buttons
     game.sprites.click.cloneExecuteForEach('update')
-    
+
+    // Update build button
+    game.sprites.build.update()
+
     /*
     // TO REMOVE: build stones
     game.sprites.cathedral.buildStones(1)

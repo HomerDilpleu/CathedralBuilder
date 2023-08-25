@@ -8,7 +8,8 @@ game = {
     engine3D:{},
     sprites:{
       cathedral: mge.game.createSprite(),
-      click: mge.game.createSprite()
+      click: mge.game.createSprite(),
+      build: mge.game.createSprite()
     },
     variables:{
       rockStock:0,
