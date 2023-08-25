@@ -15,7 +15,7 @@ game = {
       rockStock:0,
       stoneStock:0,
       stoneBuilt:0,
-      stonesAvailable:0
+      goldStock:0
     }
     
 }

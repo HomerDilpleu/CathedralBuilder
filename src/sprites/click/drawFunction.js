@@ -15,13 +15,10 @@ game.sprites.click.drawFunction = function (ctx) {
         ctx.fillRect(0,this.height*3/4,this.width*this.progress,this.height/4)
     }
 
-    // Hide is prerequisites are KO
+    // Hide if prerequisites are KO
     ctx.fillStyle = 'rgba(0,0,0,0.6)'
     if (id == 'stoneButton' && game.variables.rockStock < 1) {
         ctx.fillRect(0,0,this.width,this.height)
-    } else if (id == 'buildButton' && game.variables.stoneStock < this.buildCapacity) {
-        ctx.fillRect(0,0,this.width,this.height)
-    }
-
+    } 
    
 }

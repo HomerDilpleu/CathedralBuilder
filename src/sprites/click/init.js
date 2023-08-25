@@ -12,7 +12,6 @@ game.sprites.click.init = function() {
     this.startTime = performance.now()
     this.isStarted = false
     this.progress = 0
-    this.buildCapacity = 9
 
     // Create "rock" button
     let rockButton = this.cloneCreate()
@@ -29,10 +28,10 @@ game.sprites.click.init = function() {
     stoneButton.y = 300
 
     // Create "build" button
-    let buildButton = this.cloneCreate()
-    buildButton.id = "buildButton"
-    buildButton.text = "Build !"
-    buildButton.x = 200
-    buildButton.y = 400
+    let goldButton = this.cloneCreate()
+    goldButton.id = "goldButton"
+    goldButton.text = "Ask gold to the king !"
+    goldButton.x = 200
+    goldButton.y = 400
 
 }

@@ -12,8 +12,7 @@ game.sprites.click.update = function (ctx) {
             game.variables.rockStock-=1
             this.isStarted = true
             this.startTime = performance.now()
-        } else if (id == 'buildButton' && game.variables.stoneStock >= this.buildCapacity && this.isClicked) {
-            game.variables.stoneStock-=this.buildCapacity
+        } else if (id == 'goldButton' && this.isClicked) {
             this.isStarted = true
             this.startTime = performance.now()
         }
@@ -32,17 +31,10 @@ game.sprites.click.update = function (ctx) {
         if (id == 'rockButton') {
             game.variables.rockStock+=1
         } else if (id == 'stoneButton') {
-            game.variables.stoneStock+=this.buildCapacity
-        } else if (id == 'buildButton') {
-            game.variables.stoneBuilt+=this.buildCapacity
-            game.variables.stonesAvailable+=this.buildCapacity
+            game.variables.stoneStock+=5
+        } else if (id == 'goldButton') {
+            game.variables.goldStock+=1
         }
-    }
-
-    // Build Cathedral if stones are available
-    if(game.variables.stonesAvailable>0) {
-        game.sprites.cathedral.buildStones(1)
-        game.variables.stonesAvailable-=1
     }
 }
 
