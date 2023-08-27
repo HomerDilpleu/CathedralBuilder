@@ -5,4 +5,7 @@ game.sprites.build.init = function() {
     this.drawBoundaries=true
     this.x = 800
     this.y = 300
+
+    // Additional properties
+    this.lastClick = 0
 }

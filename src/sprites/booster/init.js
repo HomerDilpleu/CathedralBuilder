@@ -31,6 +31,33 @@ game.sprites.booster.init = function() {
     upgradeGold.text = "Upgrade"
     upgradeGold.x = 350
     upgradeGold.y = 400
-   
+
+    // Create "Booster rock" button
+    let boosterRock = this.cloneCreate()
+    boosterRock.id = "boosterRock"
+    boosterRock.text = "Rock auto click 10s"
+    boosterRock.x = 100
+    boosterRock.y = 550
+
+    // Create "Booster stone" button
+    let boosterStone = this.cloneCreate()
+    boosterStone.id = "boosterStone"
+    boosterStone.text = "Stone auto click 10s"
+    boosterStone.x = 300
+    boosterStone.y = 550
+
+    // Create "Booster gold" button
+    let boosterGold = this.cloneCreate()
+    boosterGold.id = "boosterGold"
+    boosterGold.text = "Gold auto click 10s"
+    boosterGold.x = 100
+    boosterGold.y = 650
+
+    // Create "Booster build" button
+    let boosterBuild = this.cloneCreate()
+    boosterBuild.id = "boosterBuild"
+    boosterBuild.text = "Build auto click 10s"
+    boosterBuild.x = 300
+    boosterBuild.y = 650
 
 }

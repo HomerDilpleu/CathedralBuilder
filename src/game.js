@@ -19,7 +19,11 @@ game = {
       goldStock:0,
       rockSpeed:1000,
       stoneSpeed:1000,
-      goldSpeed:1000
+      goldSpeed:1000,
+      rockAutoClickUntil:0,
+      stoneAutoClickUntil:0,
+      goldAutoClickUntil:0,
+      buildAutoClickUntil:0
     }
 }
 

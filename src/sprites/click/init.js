@@ -26,7 +26,7 @@ game.sprites.click.init = function() {
     stoneButton.x = 200
     stoneButton.y = 300
 
-    // Create "build" button
+    // Create "gold" button
     let goldButton = this.cloneCreate()
     goldButton.id = "goldButton"
     goldButton.text = "Ask gold to the king !"
