@@ -8,7 +8,6 @@ game.sprites.click.init = function() {
     // Define additional properties
     this.id = ""
     this.text = ""
-    this.speed = 1000
     this.startTime = performance.now()
     this.isStarted = false
     this.progress = 0

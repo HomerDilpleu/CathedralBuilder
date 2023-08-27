@@ -3,10 +3,9 @@
 //////////////////////
 game.scenes.main.update = function() {
 
-    // Updae click buttons
     game.sprites.click.cloneExecuteForEach('update')
+    game.sprites.booster.cloneExecuteForEach('update')
 
-    // Update build button
     game.sprites.build.update()
 
     /*

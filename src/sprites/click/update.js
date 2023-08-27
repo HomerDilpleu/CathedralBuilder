@@ -1,6 +1,7 @@
 game.sprites.click.update = function (ctx) {
-    // Shosrcuts
+    // Shortcuts
     let id = this.id
+    let v = game.variables
 
     // Start the progress if the button is still not in progress, if prerequisites are OK and if buton is clicked
     if (!this.isStarted) {
@@ -19,8 +20,14 @@ game.sprites.click.update = function (ctx) {
     }
 
     // Claculate progress
+    let speed = 0
+    if (id=='rockButton') {speed = v.rockSpeed}
+    else if (id=='stoneButton') {speed = v.stoneSpeed}
+    else if (id=='goldButton') {speed = v.goldSpeed}
+    else {speed = 0}
+
     if (this.isStarted) {
-        this.progress = (performance.now()-this.startTime)/this.speed
+        this.progress = (performance.now()-this.startTime)/speed
         if (this.progress>=1) {this.progress=1}
     }
 
@@ -29,11 +36,11 @@ game.sprites.click.update = function (ctx) {
         this.progress = 0
         this.isStarted = false
         if (id == 'rockButton') {
-            game.variables.rockStock+=1
+            v.rockStock+=1
         } else if (id == 'stoneButton') {
-            game.variables.stoneStock+=5
+            v.stoneStock+=5
         } else if (id == 'goldButton') {
-            game.variables.goldStock+=1
+            v.goldStock+=1
         }
     }
 }

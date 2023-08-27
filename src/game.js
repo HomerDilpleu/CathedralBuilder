@@ -9,15 +9,18 @@ game = {
     sprites:{
       cathedral: mge.game.createSprite(),
       click: mge.game.createSprite(),
-      build: mge.game.createSprite()
+      build: mge.game.createSprite(),
+      booster: mge.game.createSprite()
     },
     variables:{
       rockStock:0,
       stoneStock:0,
       stoneBuilt:0,
-      goldStock:0
+      goldStock:0,
+      rockSpeed:1000,
+      stoneSpeed:1000,
+      goldSpeed:1000
     }
-    
 }
 
 // Remove "Loading" div and start the game
