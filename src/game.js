@@ -12,7 +12,8 @@ game = {
       build: mge.game.createSprite(),
       booster: mge.game.createSprite(),
       stock: mge.game.createSprite(),
-      date: mge.game.createSprite()
+      date: mge.game.createSprite(),
+      play: mge.game.createSprite()
     },
     variables:{
       rockStock:0,
@@ -28,7 +29,8 @@ game = {
       buildAutoClickUntil:0,
       year:1200,
       month:1
-    }
+    },
+    music:{}
 }
 
 // Remove "Loading" div and start the game
