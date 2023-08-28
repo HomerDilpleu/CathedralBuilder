@@ -8,17 +8,15 @@ game.scenes.main.draw = function() {
     ctx.strokeStyle = 'black'
     ctx.strokeRect(0,0,mge.game.width, mge.game.height)
     // FPS
-    ctx.fillText(Math.floor(mge.game.fps),10,20)
+    ctx.fillText(Math.floor(mge.game.fps),1200,20)
     // DEBUG
-    ctx.fillText('Rocks: '.concat(game.variables.rockStock),1200,20)
-    ctx.fillText('Stones: '.concat(game.variables.stoneStock),1200,30)
-    ctx.fillText('Gold: '.concat(game.variables.goldStock),1200,40)
-    ctx.fillText('Built: '.concat(game.variables.stoneBuilt),1200,50)
+    ctx.fillText('Built: '.concat(game.variables.stoneBuilt),1200,30)
 
     //////////////////////////////////
     game.sprites.cathedral.draw()
     game.sprites.click.cloneExecuteForEach('draw')
     game.sprites.booster.cloneExecuteForEach('draw')
+    game.sprites.stock.cloneExecuteForEach('draw')
     game.sprites.build.draw()
     
 }

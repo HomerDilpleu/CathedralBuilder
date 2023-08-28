@@ -10,7 +10,8 @@ game = {
       cathedral: mge.game.createSprite(),
       click: mge.game.createSprite(),
       build: mge.game.createSprite(),
-      booster: mge.game.createSprite()
+      booster: mge.game.createSprite(),
+      stock: mge.game.createSprite()
     },
     variables:{
       rockStock:0,

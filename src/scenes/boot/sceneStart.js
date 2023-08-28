@@ -6,5 +6,6 @@ game.scenes.boot.start = function() {
     game.sprites.click.init()
     game.sprites.build.init()
     game.sprites.booster.init()
+    game.sprites.stock.init()
     
 }
