@@ -7,5 +7,6 @@ game.scenes.boot.start = function() {
     game.sprites.build.init()
     game.sprites.booster.init()
     game.sprites.stock.init()
+    game.sprites.date.init()
     
 }

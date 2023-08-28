@@ -11,20 +11,23 @@ game = {
       click: mge.game.createSprite(),
       build: mge.game.createSprite(),
       booster: mge.game.createSprite(),
-      stock: mge.game.createSprite()
+      stock: mge.game.createSprite(),
+      date: mge.game.createSprite()
     },
     variables:{
       rockStock:0,
       stoneStock:0,
-      stoneBuilt:0,
       goldStock:0,
+      stoneBuilt:0,
       rockSpeed:1000,
       stoneSpeed:1000,
       goldSpeed:1000,
       rockAutoClickUntil:0,
       stoneAutoClickUntil:0,
       goldAutoClickUntil:0,
-      buildAutoClickUntil:0
+      buildAutoClickUntil:0,
+      year:1200,
+      month:1
     }
 }
 
