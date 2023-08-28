@@ -1,9 +1,9 @@
 game.sprites.click.init = function() {
     
     // Init sprit properties
-    this.width = 120
-    this.height = 50
-    this.drawBoundaries=true
+    this.width = 180
+    this.height = 80
+    //this.drawBoundaries=true
 
     // Define additional properties
     this.id = ""
@@ -15,22 +15,22 @@ game.sprites.click.init = function() {
     // Create "rock" button
     let rockButton = this.cloneCreate()
     rockButton.id = "rockButton"
-    rockButton.text = "Dig rock"
-    rockButton.x = 200
+    rockButton.text = "DIG ROCK"
+    rockButton.x = 212
     rockButton.y = 200
 
     // Create "stone" button
     let stoneButton = this.cloneCreate()
     stoneButton.id = "stoneButton"
-    stoneButton.text = "Cut stone"
-    stoneButton.x = 200
+    stoneButton.text = "CUT STONE"
+    stoneButton.x = 212
     stoneButton.y = 300
 
     // Create "gold" button
     let goldButton = this.cloneCreate()
     goldButton.id = "goldButton"
-    goldButton.text = "Ask gold to the king !"
-    goldButton.x = 200
+    goldButton.text = "BEG GOLD"
+    goldButton.x = 212
     goldButton.y = 400
 
 }

@@ -3,15 +3,17 @@ game.sprites.click.drawFunction = function (ctx) {
     id = this.id
 
     // Draw button
-    ctx.fillStyle='red'
-    ctx.font = "20px serif"
+    ctx.fillStyle='#411F0C'
+    ctx.strokeStyle='#411F0C'
+    ctx.lineWidth=4
+    ctx.font = "30px serif"
     ctx.textAlign = "center"
-    ctx.fillText(this.text, this.width/2, this.height/2 + 5)
-    ctx.fillText(this.progress, 0,0)
+    ctx.fillText(this.text, this.width/2, this.height/2 + 10)
+    ctx.strokeRect(0,0,this.width,this.height)
 
     // Progression bar
     if (this.isStarted) {
-        ctx.fillStyle = 'green'
+        ctx.fillStyle = '#411F0C'
         ctx.fillRect(0,this.height*3/4,this.width*this.progress,this.height/4)
     }
 

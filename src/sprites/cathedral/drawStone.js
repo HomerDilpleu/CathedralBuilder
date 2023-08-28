@@ -13,21 +13,21 @@ game.sprites.cathedral.drawStone = function(ctx, stone) {
     cube.leftStyle = {lineWidth: 1, strokeStyle: '876552', fillStyle: '#FFDDCA'}
     cube.rightStyle = {lineWidth: 1, strokeStyle: '#411F0C', fillStyle: '#876552'}
     // Ground stone aspect
-    if (stone.type == 'g') {
-        cube.frontStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
-        cube.topStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
-        cube.bottomStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
-        cube.leftStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
-        cube.rightStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
-    }
+    //if (stone.type == 'g') {
+    //    cube.frontStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
+    //   cube.topStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
+    //    cube.bottomStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
+    //    cube.leftStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
+    //    cube.rightStyle = {lineWidth: 1, strokeStyle: '#A39373', fillStyle: '#F3E3C3'}
+    //}
     // Roof stone aspect
-    if (stone.type == 'r') {
-        cube.frontStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
-        cube.topStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
-        cube.bottomStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
-        cube.leftStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
-        cube.rightStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
-    }
+    //if (stone.type == 'r') {
+    //    cube.frontStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
+    //    cube.topStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
+    //    cube.bottomStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
+    //    cube.leftStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
+    //    cube.rightStyle = {lineWidth: 1, strokeStyle: '#4E4E4E', fillStyle: '#808080'}
+    //}
     
     // Update stone aspect dependding on type
     //if (stone.type == 'wb') {

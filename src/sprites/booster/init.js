@@ -15,21 +15,21 @@ game.sprites.booster.init = function() {
     let upgradeRock = this.cloneCreate()
     upgradeRock.id = "upgradeRock"
     upgradeRock.text = "Upgrade"
-    upgradeRock.x = 350
+    upgradeRock.x = 375
     upgradeRock.y = 200
 
     // Create "Upgrade rock" button
     let upgradeStone = this.cloneCreate()
     upgradeStone.id = "upgradeStone"
     upgradeStone.text = "Upgrade"
-    upgradeStone.x = 350
+    upgradeStone.x = 375
     upgradeStone.y = 300
 
     // Create "Upgrade gold" button
     let upgradeGold = this.cloneCreate()
     upgradeGold.id = "upgradeGold"
     upgradeGold.text = "Upgrade"
-    upgradeGold.x = 350
+    upgradeGold.x = 375
     upgradeGold.y = 400
 
     // Create "Booster rock" button
