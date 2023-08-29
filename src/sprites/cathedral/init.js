@@ -3,11 +3,11 @@ game.sprites.cathedral.init = function() {
     // Init sprit properties
     this.width = 830
     this.height = 630
-    this.x = 865
-    this.y = 390
+    this.x = 860
+    this.y = 395
     this.scaleX = 1
     this.scaleY = 1
-    this.drawBoundaries=true
+    //this.drawBoundaries=true
 
     // Define additional properties
     // Size

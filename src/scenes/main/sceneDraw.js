@@ -5,8 +5,8 @@ game.scenes.main.draw = function() {
     /////////// A ENLEVER ////////////
     // Cadre du jeu
     let ctx = mge._canvas._renderContext
-    ctx.strokeStyle = 'black'
-    ctx.strokeRect(0,0,mge.game.width, mge.game.height)
+    //ctx.strokeStyle = 'black'
+    //ctx.strokeRect(0,0,mge.game.width, mge.game.height)
     // FPS
     ctx.fillText(Math.floor(mge.game.fps),1200,20)
     // DEBUG

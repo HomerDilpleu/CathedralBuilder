@@ -1,9 +1,9 @@
 game.sprites.click.drawFunction = function (ctx) {
     // Shortcuts
-    id = this.id
-    light = game.colors.light
-    dark = game.colors.dark
-    transparentGrey = game.colors.transparentGrey
+    let id = this.id
+    let light = game.colors.light
+    let dark = game.colors.dark
+    let transparentGrey = game.colors.transparentGrey
 
     // Draw button
     ctx.fillStyle=dark

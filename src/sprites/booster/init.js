@@ -2,8 +2,8 @@ game.sprites.booster.init = function() {
     
     // Init sprit properties
     this.width = 120
-    this.height = 50
-    this.drawBoundaries=true
+    this.height = 40
+    //this.drawBoundaries=true
 
     // Define additional properties
     this.id = ""
@@ -14,30 +14,30 @@ game.sprites.booster.init = function() {
     // Create "Upgrade rock" button
     let upgradeRock = this.cloneCreate()
     upgradeRock.id = "upgradeRock"
-    upgradeRock.text = "Upgrade"
+    upgradeRock.text = "UPGRADE"
     upgradeRock.x = 375
-    upgradeRock.y = 200
+    upgradeRock.y = 199
 
     // Create "Upgrade rock" button
     let upgradeStone = this.cloneCreate()
     upgradeStone.id = "upgradeStone"
-    upgradeStone.text = "Upgrade"
+    upgradeStone.text = "UPGRADE"
     upgradeStone.x = 375
-    upgradeStone.y = 300
+    upgradeStone.y = 299
 
     // Create "Upgrade gold" button
     let upgradeGold = this.cloneCreate()
     upgradeGold.id = "upgradeGold"
-    upgradeGold.text = "Upgrade"
+    upgradeGold.text = "UPGRADE"
     upgradeGold.x = 375
-    upgradeGold.y = 400
+    upgradeGold.y = 399
 
     // Create "Booster rock" button
     let boosterRock = this.cloneCreate()
     boosterRock.id = "boosterRock"
-    boosterRock.text = "Rock auto click 10s"
-    boosterRock.x = 100
-    boosterRock.y = 550
+    boosterRock.text = "AUTO CLICK"
+    boosterRock.x = 375
+    boosterRock.y = 245
 
     // Create "Booster stone" button
     let boosterStone = this.cloneCreate()

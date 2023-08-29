@@ -1,8 +1,7 @@
 game.sprites.build.drawFunction = function (ctx) {
     // Shortcuts
-    light = game.colors.light
-    dark = game.colors.dark
-    transparentGrey = game.colors.transparentGrey
+    let dark = game.colors.dark
+    let transparentGrey = game.colors.transparentGrey
 
     // Draw button
     ctx.fillStyle=dark
@@ -10,7 +9,6 @@ game.sprites.build.drawFunction = function (ctx) {
     ctx.lineWidth=4
     ctx.font = "30px serif"
     ctx.textAlign = "center"
-    //ctx.fillText('BUILD CATHEDRAL', this.width/2, this.height/2 + 5)
     ctx.strokeRect(0,0,this.width,this.height)
 
     // Dispaly if there are enough stones

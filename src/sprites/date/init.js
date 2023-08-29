@@ -9,6 +9,6 @@ game.sprites.date.init = function() {
 
     // Specific properties
     this.lastChange = 0
-    this.year = 2100
+    this.year = 1200
     this.month = 1
 }

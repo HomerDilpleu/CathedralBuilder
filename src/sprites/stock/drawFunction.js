@@ -1,10 +1,10 @@
 game.sprites.stock.drawFunction = function (ctx) {
     // Shortcuts
-    id = this.id
+    let id = this.id
     let v = game.variables
-    light = game.colors.light
-    dark = game.colors.dark
-    transparentGrey = game.colors.transparentGrey
+    let light = game.colors.light
+    let dark = game.colors.dark
+    let transparentGrey = game.colors.transparentGrey
 
     // Draw button
     ctx.fillStyle=dark
