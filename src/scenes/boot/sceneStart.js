@@ -9,6 +9,7 @@ game.scenes.boot.start = function() {
     game.sprites.stock.init()
     game.sprites.date.init()
     game.sprites.play.init()
+    game.sprites.level.init()
 
     // Music
     game.music.createMusic()

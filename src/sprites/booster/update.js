@@ -11,7 +11,6 @@ game.sprites.booster.update = function (ctx) {
         if (id == 'boosterRock' && now < v.rockAutoClickUntil) {this.disable = true}
         else if (id == 'boosterStone' && now < v.stoneAutoClickUntil) {this.disable = true}
         else if (id == 'boosterGold' && now < v.goldAutoClickUntil) {this.disable = true}
-        else if (id == 'boosterBuild' && now < v.buildAutoClickUntil) {this.disable = true}
         else {this.disable = false}
     }
 
@@ -24,7 +23,6 @@ game.sprites.booster.update = function (ctx) {
         if (id == 'boosterRock') {v.rockAutoClickUntil = now+10000}
         if (id == 'boosterStone') {v.stoneAutoClickUntil = now+10000}
         if (id == 'boosterGold') {v.goldAutoClickUntil = now+10000}
-        if (id == 'boosterBuild') {v.buildAutoClickUntil = now+10000}
         // and manage other variables updat
         if (this.isClicked) {
             v.goldStock-=this.goldNeeded

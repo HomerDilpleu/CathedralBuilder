@@ -43,7 +43,7 @@ game.sprites.click.update = function (ctx) {
         this.progress = 0
         this.isStarted = false
         if (id == 'rockButton') {v.rockStock+=1 } 
-        if (id == 'stoneButton') {v.stoneStock+=5} 
+        if (id == 'stoneButton') {v.stoneStock+=10} 
         if (id == 'goldButton') {v.goldStock+=1}
     }
 }

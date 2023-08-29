@@ -13,7 +13,8 @@ game = {
       booster: mge.game.createSprite(),
       stock: mge.game.createSprite(),
       date: mge.game.createSprite(),
-      play: mge.game.createSprite()
+      play: mge.game.createSprite(),
+      level: mge.game.createSprite()
     },
     variables:{
       rockStock:0,
@@ -28,13 +29,16 @@ game = {
       goldAutoClickUntil:0,
       buildAutoClickUntil:0,
       year:1200,
-      month:1
+      month:1,
+      level:1,
+      levelGoal:10,
+      levelGoldReward:10
     },
     music:{},
     colors:{
       light:'#FFDDCA',
       dark: '#411F0C',
-      transparentGrey: '#00000099'
+      transparentGrey: '#411F0C77'
     }
 }
 

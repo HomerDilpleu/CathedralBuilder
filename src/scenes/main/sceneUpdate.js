@@ -9,6 +9,7 @@ game.scenes.main.update = function() {
 
     game.sprites.date.update()
     game.sprites.build.update()
+    game.sprites.level.update()
 
 
     // TO REMOVE: build stones

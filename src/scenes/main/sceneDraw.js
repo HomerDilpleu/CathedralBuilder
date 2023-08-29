@@ -8,9 +8,7 @@ game.scenes.main.draw = function() {
     //ctx.strokeStyle = 'black'
     //ctx.strokeRect(0,0,mge.game.width, mge.game.height)
     // FPS
-    ctx.fillText(Math.floor(mge.game.fps),1200,20)
-    // DEBUG
-    ctx.fillText('Built: '.concat(game.variables.stoneBuilt),1200,30)
+    ctx.fillText(Math.floor(mge.game.fps),1250,20)
 
     //////////////////////////////////
     game.sprites.cathedral.draw()
@@ -19,5 +17,6 @@ game.scenes.main.draw = function() {
     game.sprites.stock.cloneExecuteForEach('draw')
     game.sprites.date.draw()
     game.sprites.build.draw()
+    game.sprites.level.draw()
     
 }
