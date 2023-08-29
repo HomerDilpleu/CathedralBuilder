@@ -52,5 +52,14 @@ game.sprites.booster.init = function() {
     boosterGold.text = "AUTO CLICK"
     boosterGold.x = 368
     boosterGold.y = 510
+    
+    // Create "Booster build" button
+    let boosterBuild = this.cloneCreate()
+    boosterBuild.id = "boosterBuild"
+    boosterBuild.text = "AUTO CLICK"
+    boosterBuild.height = 90
+    boosterBuild.x = 368
+    boosterBuild.y = 125
 
 }
+

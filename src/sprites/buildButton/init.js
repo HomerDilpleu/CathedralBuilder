@@ -1,9 +1,9 @@
 game.sprites.build.init = function() {
     // Init sprit properties
-    this.width = 420
+    this.width = 285
     this.height = 90
     //this.drawBoundaries=true
-    this.x = 220
+    this.x = 153
     this.y = 125
 
     // Additional properties
