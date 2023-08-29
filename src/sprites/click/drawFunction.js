@@ -1,10 +1,13 @@
 game.sprites.click.drawFunction = function (ctx) {
     // Shortcuts
     id = this.id
+    light = game.colors.light
+    dark = game.colors.dark
+    transparentGrey = game.colors.transparentGrey
 
     // Draw button
-    ctx.fillStyle='#411F0C'
-    ctx.strokeStyle='#411F0C'
+    ctx.fillStyle=dark
+    ctx.strokeStyle=dark
     ctx.lineWidth=4
     ctx.font = "30px serif"
     ctx.textAlign = "center"
@@ -13,12 +16,12 @@ game.sprites.click.drawFunction = function (ctx) {
 
     // Progression bar
     if (this.isStarted) {
-        ctx.fillStyle = '#411F0C'
+        ctx.fillStyle = dark
         ctx.fillRect(0,this.height*3/4,this.width*this.progress,this.height/4)
     }
 
     // Hide if prerequisites are KO
-    ctx.fillStyle = 'rgba(0,0,0,0.6)'
+    ctx.fillStyle = transparentGrey
     if (id == 'stoneButton' && game.variables.rockStock < 1) {
         ctx.fillRect(0,0,this.width,this.height)
     } 

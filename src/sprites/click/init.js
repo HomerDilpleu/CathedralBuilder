@@ -15,21 +15,21 @@ game.sprites.click.init = function() {
     // Create "rock" button
     let rockButton = this.cloneCreate()
     rockButton.id = "rockButton"
-    rockButton.text = "DIG ROCK"
+    rockButton.text = "DIG"
     rockButton.x = 212
     rockButton.y = 200
 
     // Create "stone" button
     let stoneButton = this.cloneCreate()
     stoneButton.id = "stoneButton"
-    stoneButton.text = "CUT STONE"
+    stoneButton.text = "CUT"
     stoneButton.x = 212
     stoneButton.y = 300
 
     // Create "gold" button
     let goldButton = this.cloneCreate()
     goldButton.id = "goldButton"
-    goldButton.text = "BEG GOLD"
+    goldButton.text = "BEG"
     goldButton.x = 212
     goldButton.y = 400
 

@@ -30,7 +30,12 @@ game = {
       year:1200,
       month:1
     },
-    music:{}
+    music:{},
+    colors:{
+      light:'#FFDDCA',
+      dark: '#411F0C',
+      transparentGrey: '#00000099'
+    }
 }
 
 // Remove "Loading" div and start the game

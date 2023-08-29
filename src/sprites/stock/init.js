@@ -2,8 +2,8 @@ game.sprites.stock.init = function() {
     
     // Init sprit properties
     this.width = 100
-    this.height = 50
-    this.drawBoundaries=true
+    this.height = 80
+    //this.drawBoundaries=true
 
     // Define additional properties
     this.id = ""
@@ -12,21 +12,21 @@ game.sprites.stock.init = function() {
     // Create "Stock rock" button
     let stockRock = this.cloneCreate()
     stockRock.id = "stockRock"
-    stockRock.text = "Rock"
+    stockRock.text = "ROCK"
     stockRock.x = 60
     stockRock.y = 200
 
     // Create "Stock stone" button
     let stockStone = this.cloneCreate()
     stockStone.id = "stockStone"
-    stockStone.text = "Stone"
+    stockStone.text = "STONE"
     stockStone.x = 60
     stockStone.y = 300
 
     // Create "Gold stone" button
     let stockGold = this.cloneCreate()
     stockGold.id = "stockGold"
-    stockGold.text = "Gold"
+    stockGold.text = "GOLD"
     stockGold.x = 60
     stockGold.y = 400
 }
