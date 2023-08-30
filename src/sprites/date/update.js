@@ -4,16 +4,16 @@ game.sprites.date.update = function (ctx) {
     let v = game.variables
 
     // Check if is visible
-    if (v.unlockPhase >= 10) {this.isVisible = true}
+    if (v.unlockPhase >= 5) {this.isVisible = true}
 
     // Update year and month
     if (performance.now() - this.lastChange > 500) {
         this.lastChange = performance.now()
-        if (this.month == 12) {
-            this.month = 1
-            this.year += 1
+        if (v.month == 12) {
+            v.month = 1
+            v.year += 1
         } else {
-            this.month+=1
+            v.month+=1
         }
     }
 }

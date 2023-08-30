@@ -15,19 +15,27 @@ game.sprites.tuto.update = function (ctx) {
     // TUTO DIG ROCK (unlockPhase = 1)
     if (v.unlockPhase == 1) {
         if(v.rockStock >= 1) {v.unlockPhase = 2}
-    }
+    } else
     // TUTO CUT STONE (unlockPhase = 2)
     if (v.unlockPhase == 2) {
         if(v.stoneStock >= 1) {v.unlockPhase = 3}
-    }
+    } else
     // TUTO BUILD (unlockPhase = 3)
     if (v.unlockPhase == 3) {
         if(v.stoneBuilt >= 1) {v.unlockPhase = 4}
-    }
-   // LET BUILD (unlockPhase = 4)
+    } else
+   // LET BUILD ONCE (unlockPhase = 4)
     if (v.unlockPhase == 4) {
-        if(v.stoneBuilt >= 30) {v.unlockPhase = 5}
-    }
+        if(v.stoneBuilt >= 20) {
+                v.unlockPhase = 5
+                v.year = 1200
+                v.month = 1
+        }
+    } else
+   // UNLOCK THE GAME WITHOUT BOOSTERS (unlockPhase = 5)
+   if (v.unlockPhase == 5) {
+        if (isClicked) {this.isVisible = false}
+    } 
 
 }
 

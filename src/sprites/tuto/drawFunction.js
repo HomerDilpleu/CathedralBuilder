@@ -27,13 +27,13 @@ game.sprites.tuto.drawFunction = function (ctx) {
 
     if (v.unlockPhase == 1) {
         ctx.textAlign = "left"
-        ctx.fillText('FIRST YOU NEED TO DIG UP ROCK', -130, this.height/2 -15)
+        ctx.fillText('FIRST DIG UP ROCK', -130, this.height/2 -15)
         ctx.fillText('👈🏻', -180, this.height/2 - 20)
     }
 
     if (v.unlockPhase == 2) {
         ctx.textAlign = "left"
-        ctx.fillText('THEN YOU NEED TO CUT STONES', -130, this.height/2 + 105)
+        ctx.fillText('THEN CUT STONES', -130, this.height/2 + 105)
         ctx.fillText('👈🏻', -180, this.height/2 + 100)
     }
 
@@ -43,4 +43,10 @@ game.sprites.tuto.drawFunction = function (ctx) {
         ctx.fillText('👈🏻', -180, this.height/2 - 140)
     }
 
+    if (v.unlockPhase == 5) {
+        ctx.textAlign = "center"
+        ctx.fillText('PERFECT! WE CAN NOW START THE GAME', this.width/2, this.height/2)
+        ctx.fillText('REMIND YOU HAVE 100 YEARS', this.width/2, this.height/2+50)
+        ctx.fillText('TO BUILD YOUR CATHEDRAL', this.width/2, this.height/2+100)
+    }
 }

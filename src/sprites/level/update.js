@@ -4,7 +4,7 @@ game.sprites.level.update = function (ctx) {
     let v = game.variables
 
     // Check if is visible
-    if (v.unlockPhase >= 10) {this.isVisible = true}
+    if (v.unlockPhase >= 5) {this.isVisible = true}
 
     // LEvel reached
     if(v.stoneBuilt >= v.levelGoal) {

@@ -22,7 +22,7 @@ game.sprites.build.drawFunction = function (ctx) {
        }
     } else {
         ctx.font = "25px serif"
-        ctx.fillText("Cut some stones", this.width/2, this.height/2 - 10)
+        ctx.fillText("Need stones", this.width/2, this.height/2 - 10)
         ctx.fillText("to build the cathedral", this.width/2, this.height/2 + 25)
         ctx.fillStyle = transparentGrey
         ctx.fillRect(0,0,this.width,this.height)
