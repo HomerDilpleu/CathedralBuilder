@@ -3,6 +3,7 @@ game.sprites.stock.init = function() {
     // Init sprit properties
     this.width = 100
     this.height = 90
+    this.isVisible = false
     //this.drawBoundaries=true
 
     // Define additional properties

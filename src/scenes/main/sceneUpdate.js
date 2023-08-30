@@ -7,9 +7,11 @@ game.scenes.main.update = function() {
     game.sprites.booster.cloneExecuteForEach('update')
     game.sprites.stock.cloneExecuteForEach('update')
 
+    game.sprites.cathedral.update()
     game.sprites.date.update()
     game.sprites.build.update()
     game.sprites.level.update()
+    game.sprites.tuto.update()
 
 
     // TO REMOVE: build stones

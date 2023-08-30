@@ -2,6 +2,12 @@ game.sprites.click.update = function (ctx) {
     // Shortcuts
     let id = this.id
     let v = game.variables
+
+    // Check if button is visible
+    if (id == 'rockButton' && v.unlockPhase >= 1) {this.isVisible = true}
+    if (id == 'stoneButton' && v.unlockPhase >= 2) {this.isVisible = true}
+    if (id == 'goldButton' && v.unlockPhase >= 10) {this.isVisible = true}
+
     
     // Check if auto click applies
     let autoClick = false

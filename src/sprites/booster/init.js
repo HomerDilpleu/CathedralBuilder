@@ -3,6 +3,7 @@ game.sprites.booster.init = function() {
     // Init sprit properties
     this.width = 125
     this.height = 40
+    this.isVisible = false
     //this.drawBoundaries=true
 
     // Define additional properties

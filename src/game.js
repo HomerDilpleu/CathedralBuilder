@@ -14,7 +14,8 @@ game = {
       stock: mge.game.createSprite(),
       date: mge.game.createSprite(),
       play: mge.game.createSprite(),
-      level: mge.game.createSprite()
+      level: mge.game.createSprite(),
+      tuto: mge.game.createSprite()
     },
     variables:{
       rockStock:0,
@@ -32,7 +33,8 @@ game = {
       month:1,
       level:1,
       levelGoal:10,
-      levelGoldReward:10
+      levelGoldReward:10,
+      unlockPhase:0
     },
     music:{},
     colors:{

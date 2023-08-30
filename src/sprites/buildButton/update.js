@@ -4,6 +4,9 @@ game.sprites.build.update = function (ctx) {
     let v = game.variables
     let now = performance.now()
 
+    // Check if is visible
+    if(v.unlockPhase >= 3) {this.isVisible = true}
+
     // If click then 1s auto click
     if (this.isClicked) {v.buildAutoClickUntil = now+1000}
 

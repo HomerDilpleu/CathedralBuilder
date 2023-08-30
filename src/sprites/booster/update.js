@@ -4,6 +4,15 @@ game.sprites.booster.update = function (ctx) {
     let v = game.variables
     let now = performance.now()
 
+    // Check if is visible
+    if (id == 'upgradeRock' && v.unlockPhase >= 10) {this.isVisible = true}
+    if (id == 'upgradeStone' && v.unlockPhase >= 10) {this.isVisible = true}
+    if (id == 'upgradeGold' && v.unlockPhase >= 10) {this.isVisible = true}
+    if (id == 'boosterRock' && v.unlockPhase >= 10) {this.isVisible = true}
+    if (id == 'boosterStone' && v.unlockPhase >= 10) {this.isVisible = true}
+    if (id == 'boosterGold' && v.unlockPhase >= 10) {this.isVisible = true}
+    if (id == 'boosterBuild' && v.unlockPhase >= 10) {this.isVisible = true}
+
     // Evaluate if button is enabled or disabled
     if (this.goldNeeded > v.goldStock) {
         this.disable = true

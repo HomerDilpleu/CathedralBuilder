@@ -7,6 +7,7 @@ game.sprites.cathedral.init = function() {
     this.y = 395
     this.scaleX = 1
     this.scaleY = 1
+    this.isVisible = false
     //this.drawBoundaries=true
 
     // Define additional properties

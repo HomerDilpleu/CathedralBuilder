@@ -9,6 +9,7 @@ game.scenes.main.draw = function() {
     //ctx.strokeRect(0,0,mge.game.width, mge.game.height)
     // FPS
     ctx.fillText(Math.floor(mge.game.fps),1250,20)
+    ctx.fillText(Math.floor(game.variables.unlockPhase),1250,30)
 
     //////////////////////////////////
     game.sprites.cathedral.draw()
@@ -18,5 +19,6 @@ game.scenes.main.draw = function() {
     game.sprites.date.draw()
     game.sprites.build.draw()
     game.sprites.level.draw()
+    game.sprites.tuto.draw()
     
 }
