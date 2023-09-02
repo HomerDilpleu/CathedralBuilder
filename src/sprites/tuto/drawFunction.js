@@ -28,19 +28,19 @@ game.sprites.tuto.drawFunction = function (ctx) {
     if (v.unlockPhase == 1) {
         ctx.textAlign = "left"
         ctx.fillText('FIRST DIG UP ROCK', -130, this.height/2 -15)
-        ctx.fillText('👈🏻', -180, this.height/2 - 20)
+        ctx.fillText('MAIN', -180, this.height/2 - 20)
     }
 
     if (v.unlockPhase == 2) {
         ctx.textAlign = "left"
         ctx.fillText('THEN CUT STONES', -130, this.height/2 + 105)
-        ctx.fillText('👈🏻', -180, this.height/2 + 100)
+        ctx.fillText('MAIN', -180, this.height/2 + 100)
     }
 
     if (v.unlockPhase == 3) {
         ctx.textAlign = "left"
         ctx.fillText('GREAT !!! YOU CAN NOW START BUILDNG', -130, this.height/2 -135)
-        ctx.fillText('👈🏻', -180, this.height/2 - 140)
+        ctx.fillText('MAIN', -180, this.height/2 - 140)
     }
 
     if (v.unlockPhase == 5) {
@@ -50,3 +50,4 @@ game.sprites.tuto.drawFunction = function (ctx) {
         ctx.fillText('TO BUILD YOUR CATHEDRAL', this.width/2, this.height/2+100)
     }
 }
+

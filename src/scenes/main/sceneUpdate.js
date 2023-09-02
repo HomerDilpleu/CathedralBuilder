@@ -16,7 +16,7 @@ game.scenes.main.update = function() {
 
     // TO REMOVE: build stones
     game.variables.unlockPhase = 10
-    game.sprites.cathedral.buildStones(10)
+    game.sprites.cathedral.buildStones(50)
 
     if (game.sprites.cathedral.builtStones >= 600 && game.sprites.cathedral.offSet == 110) {
         game.sprites.cathedral.changeOffSet(90)
