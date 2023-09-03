@@ -21,7 +21,6 @@ game.sprites.booster.drawFunction = function (ctx) {
     if (this.disable) {
         ctx.fillRect(0,0,this.width,this.height)
     } 
-
 }
 
 

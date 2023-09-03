@@ -6,5 +6,4 @@ game.sprites.play.init = function() {
     this.x = 500
     this.y = 300
     this.drawBoundaries=true
-
 }

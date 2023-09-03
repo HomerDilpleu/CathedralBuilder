@@ -4,7 +4,6 @@ game.sprites.stock.drawFunction = function (ctx) {
     let v = game.variables
     let light = game.colors.light
     let dark = game.colors.dark
-    let transparentGrey = game.colors.transparentGrey
 
     // Draw button
     ctx.fillStyle=dark
@@ -24,5 +23,4 @@ game.sprites.stock.drawFunction = function (ctx) {
     if (id == 'stockStone') {text = v.stoneStock}
     if (id == 'stockGold') {text = v.goldStock}
     ctx.fillText(text, this.width/2, this.height/2 + 25)
-    
 }

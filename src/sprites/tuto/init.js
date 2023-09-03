@@ -7,5 +7,4 @@ game.sprites.tuto.init = function() {
     this.y = mge.game.height*3/8
     this.isVisible = true
     //this.drawBoundaries=true
-
 }

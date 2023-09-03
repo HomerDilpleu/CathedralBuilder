@@ -33,5 +33,4 @@ game.sprites.click.init = function() {
     goldButton.text = "BEG"
     goldButton.x = 210  
     goldButton.y = 485
-
 }

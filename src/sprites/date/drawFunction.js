@@ -7,5 +7,4 @@ game.sprites.date.drawFunction = function (ctx) {
     ctx.fillStyle=dark
     ctx.font = "30px serif"
     ctx.fillText('Year: ' + v.year + ' - Month: ' + v.month, 10, this.height/2 + 5)
- 
 }

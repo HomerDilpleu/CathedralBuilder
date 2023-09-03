@@ -28,5 +28,4 @@ game.sprites.cathedral.init = function() {
 
     // Define Cathedral structure
     this.defineStructure()
-
 }

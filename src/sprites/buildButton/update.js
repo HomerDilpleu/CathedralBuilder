@@ -21,5 +21,4 @@ game.sprites.build.update = function (ctx) {
         game.variables.stoneBuilt+=1    
         this.lastClick = now
     }
-
 }

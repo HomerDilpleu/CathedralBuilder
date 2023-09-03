@@ -4,6 +4,5 @@ game.sprites.cathedral.update = function (ctx) {
         let v = game.variables
 
         if (v.unlockPhase >= 3) {this.isVisible = true}
-
 }
 

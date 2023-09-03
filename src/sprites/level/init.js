@@ -7,5 +7,4 @@ game.sprites.level.init = function() {
     //this.drawBoundaries=true
     this.x = 500
     this.y = 30
-
 }

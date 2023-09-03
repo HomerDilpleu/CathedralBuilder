@@ -1,7 +1,6 @@
 game.sprites.click.drawFunction = function (ctx) {
     // Shortcuts
     let id = this.id
-    let light = game.colors.light
     let dark = game.colors.dark
     let transparentGrey = game.colors.transparentGrey
 
@@ -25,5 +24,4 @@ game.sprites.click.drawFunction = function (ctx) {
     if (id == 'stoneButton' && game.variables.rockStock < 1) {
         ctx.fillRect(0,0,this.width,this.height)
     } 
-   
 }

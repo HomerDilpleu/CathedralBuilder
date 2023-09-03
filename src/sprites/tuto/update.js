@@ -36,6 +36,5 @@ game.sprites.tuto.update = function (ctx) {
    if (v.unlockPhase == 5) {
         if (isClicked) {this.isVisible = false}
     } 
-
 }
 

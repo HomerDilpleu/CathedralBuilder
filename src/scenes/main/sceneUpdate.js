@@ -15,19 +15,18 @@ game.scenes.main.update = function() {
 
 
     // TO REMOVE: build stones
-    game.variables.unlockPhase = 10
-    game.sprites.cathedral.buildStones(50)
+//    game.variables.unlockPhase = 0
+//    game.sprites.cathedral.buildStones(50)
 
-    if (game.sprites.cathedral.builtStones >= 600 && game.sprites.cathedral.offSet == 110) {
-        game.sprites.cathedral.changeOffSet(90)
-    }
+//    if (game.sprites.cathedral.builtStones >= 600 && game.sprites.cathedral.offSet == 110) {
+//        game.sprites.cathedral.changeOffSet(90)
+//   }
 
-    if (game.sprites.cathedral.builtStones >= 3000 && game.sprites.cathedral.offSet == 90) {
-        game.sprites.cathedral.changeOffSet(80)
-    }
+//    if (game.sprites.cathedral.builtStones >= 3000 && game.sprites.cathedral.offSet == 90) {
+//        game.sprites.cathedral.changeOffSet(80)
+//    }
 
-    if (game.sprites.cathedral.builtStones >= 5000 && game.sprites.cathedral.offSet == 80) {
-        game.sprites.cathedral.changeOffSet(0)
-    }
-
+//    if (game.sprites.cathedral.builtStones >= 5000 && game.sprites.cathedral.offSet == 80) {
+//        game.sprites.cathedral.changeOffSet(0)
+//    }
 }

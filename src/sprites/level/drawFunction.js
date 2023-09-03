@@ -24,5 +24,4 @@ game.sprites.level.drawFunction = function (ctx) {
     // Draw target score
     ctx.font = "20px serif"
     ctx.fillText(v.levelGoal, 120 + barSize, 28)
-    
 }

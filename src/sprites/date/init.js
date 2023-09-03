@@ -10,5 +10,4 @@ game.sprites.date.init = function() {
 
     // Specific properties
     this.lastChange = 0
-
 }

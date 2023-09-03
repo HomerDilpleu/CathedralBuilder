@@ -4,5 +4,4 @@ game.sprites.play.drawFunction = function (ctx) {
     ctx.font = "20px serif"
     ctx.textAlign = "center"
     ctx.fillText('Play', this.width/2, this.height/2 + 5)
- 
 }

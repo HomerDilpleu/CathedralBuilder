@@ -15,5 +15,4 @@ game.sprites.cathedral.changeOffSet = function(offSet) {
     this.canvas.ctx.clearRect(0,0,this.width, this.height)
     // Re-built
     game.sprites.cathedral.buildStones(builtStones)
-
 }

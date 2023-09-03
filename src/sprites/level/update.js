@@ -16,4 +16,3 @@ game.sprites.level.update = function (ctx) {
         v.levelGoldReward+=10
     }
 }
-
