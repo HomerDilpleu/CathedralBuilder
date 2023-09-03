@@ -15,7 +15,8 @@ game = {
       date: mge.game.createSprite(),
       play: mge.game.createSprite(),
       level: mge.game.createSprite(),
-      tuto: mge.game.createSprite()
+      tuto: mge.game.createSprite(),
+      bonus: mge.game.createSprite()
     },
     variables:{
       rockStock:0,

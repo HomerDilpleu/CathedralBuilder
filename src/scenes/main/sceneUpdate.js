@@ -6,6 +6,7 @@ game.scenes.main.update = function() {
     game.sprites.click.cloneExecuteForEach('update')
     game.sprites.booster.cloneExecuteForEach('update')
     game.sprites.stock.cloneExecuteForEach('update')
+    game.sprites.bonus.cloneExecuteForEach('update')
 
     game.sprites.cathedral.update()
     game.sprites.date.update()

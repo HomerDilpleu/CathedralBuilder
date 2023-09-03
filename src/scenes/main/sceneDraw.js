@@ -16,6 +16,7 @@ game.scenes.main.draw = function() {
     game.sprites.click.cloneExecuteForEach('draw')
     game.sprites.booster.cloneExecuteForEach('draw')
     game.sprites.stock.cloneExecuteForEach('draw')
+    game.sprites.bonus.cloneExecuteForEach('draw')
     game.sprites.date.draw()
     game.sprites.build.draw()
     game.sprites.level.draw()

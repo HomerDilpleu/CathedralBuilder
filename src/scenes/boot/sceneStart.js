@@ -11,6 +11,7 @@ game.scenes.boot.start = function() {
     game.sprites.play.init()
     game.sprites.level.init()
     game.sprites.tuto.init()
+    game.sprites.bonus.init()
     // Music
     game.music.createMusic()
 }
