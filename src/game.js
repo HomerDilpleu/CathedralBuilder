@@ -38,7 +38,7 @@ game = {
       month:1,
       level:1,
       levelGoal:50,
-      levelGoldReward:0,
+      levelGoldReward:1,
       unlockPhase:0,
       unlockTime:0
     },
