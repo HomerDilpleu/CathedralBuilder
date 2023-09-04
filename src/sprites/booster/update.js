@@ -8,10 +8,10 @@ game.sprites.booster.update = function (ctx) {
     if (id == 'upgradeRock' && v.unlockPhase >= 6) {this.isVisible = true}
     if (id == 'upgradeStone' && v.unlockPhase >= 6) {this.isVisible = true}
     if (id == 'upgradeGold' && v.unlockPhase >= 6) {this.isVisible = true}
-    if (id == 'boosterRock' && v.unlockPhase >= 10) {this.isVisible = true}
-    if (id == 'boosterStone' && v.unlockPhase >= 10) {this.isVisible = true}
-    if (id == 'boosterGold' && v.unlockPhase >= 10) {this.isVisible = true}
-    if (id == 'boosterBuild' && v.unlockPhase >= 10) {this.isVisible = true}
+    if (id == 'boosterRock' && v.unlockPhase >= 7) {this.isVisible = true}
+    if (id == 'boosterStone' && v.unlockPhase >= 7) {this.isVisible = true}
+    if (id == 'boosterGold' && v.unlockPhase >= 7) {this.isVisible = true}
+    if (id == 'boosterBuild' && v.unlockPhase >= 8) {this.isVisible = true}
 
     // Evaluate if button is enabled or disabled
     if (this.goldNeeded > v.goldStock) {
@@ -27,9 +27,18 @@ game.sprites.booster.update = function (ctx) {
     // Apply booster if enough gold and is clicked
     if (!this.disable && this.isClicked) {
         // Apply the right booster
-        if (id == 'upgradeRock') {v.rockSpeed = v.rockSpeed * 0.8}
-        if (id == 'upgradeStone') {v.stoneSpeed = v.stoneSpeed * 0.8}
-        if (id == 'upgradeGold') {v.goldSpeed = v.goldSpeed * 0.8}
+        if (id == 'upgradeRock') {
+            v.rockSpeed = v.rockSpeed * 0.8
+            v.rockProduction = Math.ceil(v.rockProduction * 1.2)
+        }
+        if (id == 'upgradeStone') {
+            v.stoneSpeed = v.stoneSpeed * 0.8
+            v.stoneProduction = Math.ceil(v.stoneProduction * 1.2)
+        }
+        if (id == 'upgradeGold') {
+            v.goldSpeed = v.goldSpeed * 0.8
+            v.goldProduction = Math.ceil(v.goldProduction * 1.2)
+        }
         if (id == 'boosterRock') {v.rockAutoClickUntil = now+10000}
         if (id == 'boosterStone') {v.stoneAutoClickUntil = now+10000}
         if (id == 'boosterGold') {v.goldAutoClickUntil = now+10000}

@@ -10,6 +10,8 @@ game.scenes.main.draw = function() {
     // FPS
     ctx.fillText(Math.floor(mge.game.fps),1250,20)
     ctx.fillText(Math.floor(game.variables.unlockPhase),1250,30)
+    ctx.fillText(Math.floor(game.variables.unlockTime),1250,40)
+    ctx.fillText(Math.floor(performance.now()),1250,50)
 
     //////////////////////////////////
     game.sprites.cathedral.draw()

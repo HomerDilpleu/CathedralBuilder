@@ -47,6 +47,9 @@ game.sprites.tuto.drawFunction = function (ctx) {
         ctx.fillText('TO BUILD YOUR CATHEDRAL', this.width/2, this.height/2+100)
     }
 
+    if (v.unlockPhase == 5.1) {
+    }
+
     if (v.unlockPhase == 6) {
         ctx.textAlign = "center"
         ctx.fillText('GOLD AND UPGRADES UNLOCKED', this.width/2, this.height/2)

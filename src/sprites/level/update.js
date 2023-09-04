@@ -29,9 +29,9 @@ game.sprites.level.update = function (ctx) {
         if (v.level == 1) {
             bonus.create('stone',100)
         }
-        if (v.level == 2) {
-            v.unlockPhase = 6
-        }
+        //if (v.level == 2) {
+        //    v.unlockPhase = 6
+        //}
         // Update level
         v.level+=1
     }

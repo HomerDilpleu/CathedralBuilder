@@ -3,6 +3,10 @@
 //////////////////////
 game.scenes.main.update = function() {
 
+    // Unlock
+    this.unlockPhase()
+
+    // Update each sprite
     game.sprites.click.cloneExecuteForEach('update')
     game.sprites.booster.cloneExecuteForEach('update')
     game.sprites.stock.cloneExecuteForEach('update')
@@ -13,6 +17,8 @@ game.scenes.main.update = function() {
     game.sprites.build.update()
     game.sprites.level.update()
     game.sprites.tuto.update()
+
+
 
     // TO REMOVE: build stones
 //    game.variables.unlockPhase = 0
