@@ -18,8 +18,8 @@ game.sprites.build.update = function (ctx) {
     // Build if there are enough stones
     if (v.stoneStock >= speed && autoClick && now > this.lastClick + 50) {
         game.sprites.cathedral.buildStones(speed)
-        game.variables.stoneStock-=speed    
-        game.variables.stoneBuilt+=speed    
+        v.stoneStock-=speed    
+        v.stoneBuilt+=speed    
         this.lastClick = now
     }
 }

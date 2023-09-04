@@ -2,37 +2,48 @@
 // Update scene
 //////////////////////
 game.scenes.main.update = function() {
+    // Shortcut
+    let s = game.sprites
+    let v = game.variables
 
-    // Unlock
+    // Check things to unlock
     this.unlockPhase()
 
     // Update each sprite
-    game.sprites.click.cloneExecuteForEach('update')
-    game.sprites.booster.cloneExecuteForEach('update')
-    game.sprites.stock.cloneExecuteForEach('update')
-    game.sprites.bonus.cloneExecuteForEach('update')
+    s.click.cloneExecuteForEach('update')
+    s.booster.cloneExecuteForEach('update')
+    s.stock.cloneExecuteForEach('update')
+    s.bonus.cloneExecuteForEach('update')
 
-    game.sprites.cathedral.update()
-    game.sprites.date.update()
-    game.sprites.build.update()
-    game.sprites.level.update()
-    game.sprites.tuto.update()
+    s.cathedral.update()
+    s.date.update()
+    s.build.update()
+    s.level.update()
+    s.tuto.update()
 
+    //////////// TO REMOVE ////////////////
+//    v.unlockPhase = 8
+//    v.goldStock = 2000
+//   game.sprites.cathedral.buildStones(10)
+//    v.stoneBuilt+=10
+    ///////////////////////////////////////
 
+    // Change offset and Cathedral position depending on number of built stones
+    if (v.cathedralOffset == -1) {
+        v.cathedralOffset = 110
+        s.cathedral.changeOffSet(v.cathedralOffset)
+    }
+    if (v.cathedralOffset == 110 && v.stoneBuilt>=800) {
+        v.cathedralOffset = 90
+        s.cathedral.changeOffSet(v.cathedralOffset)
+    }
+    if (v.cathedralOffset == 90 && v.stoneBuilt>=5500) {
+        v.cathedralOffset = 50
+        s.cathedral.changeOffSet(v.cathedralOffset)
+    }
+    if (v.cathedralOffset == 50 && v.stoneBuilt>=16000) {
+        v.cathedralOffset = 0
+        s.cathedral.changeOffSet(v.cathedralOffset)
+    }
 
-    // TO REMOVE: build stones
-//    game.variables.unlockPhase = 0
-//    game.sprites.cathedral.buildStones(50)
-
-//    if (game.sprites.cathedral.builtStones >= 600 && game.sprites.cathedral.offSet == 110) {
-//        game.sprites.cathedral.changeOffSet(90)
-//   }
-
-//    if (game.sprites.cathedral.builtStones >= 3000 && game.sprites.cathedral.offSet == 90) {
-//        game.sprites.cathedral.changeOffSet(80)
-//    }
-
-//    if (game.sprites.cathedral.builtStones >= 5000 && game.sprites.cathedral.offSet == 80) {
-//        game.sprites.cathedral.changeOffSet(0)
-//    }
 }

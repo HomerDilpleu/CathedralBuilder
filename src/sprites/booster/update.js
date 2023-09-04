@@ -33,7 +33,7 @@ game.sprites.booster.update = function (ctx) {
         }
         if (id == 'upgradeStone') {
             v.stoneSpeed = v.stoneSpeed * 0.9
-            v.stoneProduction = Math.ceil(v.stoneProduction * 1.1)
+            v.stoneProduction = Math.ceil(v.stoneProduction * 1.3)
         }
         if (id == 'upgradeGold') {
             v.goldSpeed = v.goldSpeed * 0.9
@@ -43,10 +43,14 @@ game.sprites.booster.update = function (ctx) {
         if (id == 'boosterStone') {v.stoneAutoClickUntil = now+10000}
         if (id == 'boosterGold') {v.goldAutoClickUntil = now+10000}
         if (id == 'boosterBuild') {v.buildAutoClickUntil = now+10000}
-        // and manage other variables updat
+        // and manage other variables update
         if (this.isClicked) {
             v.goldStock-=this.goldNeeded
-            this.goldNeeded=this.goldNeeded*2
+            if (id == 'boosterStone' || id == 'boosterGold' || id == 'boosterBuild') {
+                this.goldNeeded=Math.ceil(this.goldNeeded*1.2)
+            } else {
+                this.goldNeeded=this.goldNeeded*2
+            }
         }
     }
 }
