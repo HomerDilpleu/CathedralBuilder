@@ -30,6 +30,7 @@ game = {
       stoneAutoClickUntil:0,
       goldAutoClickUntil:0,
       buildAutoClickUntil:0,
+      buildSpeed:1,
       year:1200,
       month:1,
       level:1,
