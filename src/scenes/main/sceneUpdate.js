@@ -14,7 +14,6 @@ game.scenes.main.update = function() {
     game.sprites.level.update()
     game.sprites.tuto.update()
 
-
     // TO REMOVE: build stones
 //    game.variables.unlockPhase = 0
 //    game.sprites.cathedral.buildStones(50)

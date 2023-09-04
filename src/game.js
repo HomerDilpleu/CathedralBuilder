@@ -38,6 +38,7 @@ game = {
       unlockPhase:0
     },
     music:{},
+    utils:{},
     colors:{
       light:'#FFDDCA',
       dark: '#411F0C',
