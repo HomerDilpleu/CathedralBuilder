@@ -3,6 +3,7 @@ game.sprites.build.update = function (ctx) {
     let id = this.id
     let v = game.variables
     let now = performance.now()
+    let speed = v.buildSpeed
 
     // Check if is visible
     if(v.unlockPhase >= 3) {this.isVisible = true}
@@ -15,10 +16,10 @@ game.sprites.build.update = function (ctx) {
     if (now < v.buildAutoClickUntil) {autoClick = true}
 
     // Build if there are enough stones
-    if (v.stoneStock >= 1 && autoClick && now > this.lastClick + 50) {
-        game.sprites.cathedral.buildStones(1)
-        game.variables.stoneStock-=1    
-        game.variables.stoneBuilt+=1    
+    if (v.stoneStock >= speed && autoClick && now > this.lastClick + 50) {
+        game.sprites.cathedral.buildStones(speed)
+        game.variables.stoneStock-=speed    
+        game.variables.stoneBuilt+=speed    
         this.lastClick = now
     }
 }

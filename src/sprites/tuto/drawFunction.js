@@ -46,4 +46,10 @@ game.sprites.tuto.drawFunction = function (ctx) {
         ctx.fillText('REMEMBER YOU HAVE 100 YEARS', this.width/2, this.height/2+50)
         ctx.fillText('TO BUILD YOUR CATHEDRAL', this.width/2, this.height/2+100)
     }
+
+    if (v.unlockPhase == 6) {
+        ctx.textAlign = "center"
+        ctx.fillText('GOLD AND UPGRADES UNLOCKED', this.width/2, this.height/2)
+    }
+
 }

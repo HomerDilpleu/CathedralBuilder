@@ -34,9 +34,10 @@ game = {
       year:1200,
       month:1,
       level:1,
-      levelGoal:10,
-      levelGoldReward:10,
-      unlockPhase:0
+      levelGoal:50,
+      levelGoldReward:0,
+      unlockPhase:0,
+      unlockTime:0
     },
     music:{},
     utils:{},

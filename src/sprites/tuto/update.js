@@ -27,14 +27,18 @@ game.sprites.tuto.update = function (ctx) {
    // LET BUILD ONCE (unlockPhase = 4)
     if (v.unlockPhase == 4) {
         if(v.stoneBuilt >= 20) {
-                v.unlockPhase = 5
-                v.year = 1200
-                v.month = 1
+            v.unlockPhase = 5
+            v.year = 1200
+            v.month = 1
         }
     } else
    // UNLOCK THE GAME WITHOUT BOOSTERS (unlockPhase = 5)
    if (v.unlockPhase == 5) {
         if (isClicked) {this.isVisible = false}
+    } 
+    // UNLOCK GOLD AND UPGRADE (unlockPhase = 6)
+    if (v.unlockPhase == 6) {
+        this.isVisible = true
     } 
 }
 
