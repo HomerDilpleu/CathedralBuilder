@@ -1,10 +1,7 @@
 game.sprites.tuto.drawFunction = function (ctx) {
     // Shortcuts
-    let id = this.id
     let v = game.variables
-    let light = game.colors.light
     let dark = game.colors.dark
-    let now = performance.now()
 
 
     // Sytle

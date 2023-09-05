@@ -13,8 +13,7 @@ game.sprites.bonus.drawFunction = function (ctx) {
         medium2 = '#3399FF'
         medium3 = '#0066CC'
         dark = '#004C99'
-    } else 
-    if (this.color == 'green') {
+    } else if (this.color == 'green') {
         light = '#99FF99'
         medium1 = '#66FF66'
         medium2 = '#33FF33'

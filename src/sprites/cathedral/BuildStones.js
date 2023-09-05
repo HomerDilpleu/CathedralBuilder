@@ -35,20 +35,5 @@ game.sprites.cathedral.buildStones = function(stonesNb) {
     }
     // Update curStone
     this.curStone += realStonesNb
- /*   
-    // Add new stones from structure
-    for (let stoneNum = curStone; stoneNum < curStone + realStonesNb; stoneNum+=1) {
-        let stone = this.structure[stoneNum]
-        let offSetStone = {x:stone.x,y:stone.y,z:stone.z,type:stone.type} 
-        // Take into account camera offset
-        offSetStone.z -= this.offSet
-        // Draw stone in cathedral canvas
-        this.drawStone(ctx,offSetStone)
-        // Update number of stone already built
-        this.builtStones +=1
-    }
-    // Update curStone
-    this.curStone += realStonesNb
-*/
 }
 

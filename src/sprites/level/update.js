@@ -14,13 +14,10 @@ game.sprites.level.update = function (ctx) {
         // Manage specific bonus and unlock phase
         if (v.level == 1) {
             bonus.create('stone',50)
-        } else
-        if (v.level == 2) {
-        } else
-        if (v.level == 3) {
+        } else if (v.level == 2) {
+        } else if (v.level == 3) {
             bonus.create('gold',10)
-        } else 
-        if (v.level == 4) {
+        } else if (v.level == 4) {
         } else {
             let type = rdm(['rock','stone','gold',,'autoclick'])
             if(type == 'rock') {bonus.create('rock',v.rockProduction * 5)}
