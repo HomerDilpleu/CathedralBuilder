@@ -29,15 +29,15 @@ game.sprites.booster.update = function (ctx) {
         // Apply the right booster
         if (id == 'upgradeRock') {
             v.rockSpeed = v.rockSpeed * 0.9
-            v.rockProduction = Math.ceil(v.rockProduction * 1.1)
+            v.rockProduction = Math.ceil(v.rockProduction * 1.05)
         }
         if (id == 'upgradeStone') {
             v.stoneSpeed = v.stoneSpeed * 0.9
-            v.stoneProduction = Math.ceil(v.stoneProduction * 1.3)
+            v.stoneProduction = Math.ceil(v.stoneProduction * 1.25)
         }
         if (id == 'upgradeGold') {
             v.goldSpeed = v.goldSpeed * 0.9
-            v.goldProduction = Math.ceil(v.goldProduction * 1.1)
+            v.goldProduction = Math.ceil(v.goldProduction * 1.05)
         }
         if (id == 'boosterRock') {v.rockAutoClickUntil = now+10000}
         if (id == 'boosterStone') {v.stoneAutoClickUntil = now+10000}
@@ -46,8 +46,8 @@ game.sprites.booster.update = function (ctx) {
         // and manage other variables update
         if (this.isClicked) {
             v.goldStock-=this.goldNeeded
-            if (id == 'boosterStone' || id == 'boosterGold' || id == 'boosterBuild') {
-                this.goldNeeded=Math.ceil(this.goldNeeded*1.2)
+            if (id == 'boosterStone' || id == 'boosterGold' || id == 'boosterBuild' || id == 'boosterRock') {
+                this.goldNeeded=Math.ceil(this.goldNeeded*1.4)
             } else {
                 this.goldNeeded=this.goldNeeded*2
             }
