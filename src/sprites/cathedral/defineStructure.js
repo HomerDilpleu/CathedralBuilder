@@ -159,4 +159,6 @@ game.sprites.cathedral.defineStructure = function() {
         }
         z-=1
     }
+
+    this.totalStonesToBuild = this.structure.length
 }

@@ -9,9 +9,7 @@ game.scenes.main.draw = function() {
     //ctx.strokeRect(0,0,mge.game.width, mge.game.height)
     // FPS
     ctx.fillText(Math.floor(mge.game.fps),1250,20)
-    ctx.fillText(Math.floor(game.variables.unlockPhase),1250,30)
-    ctx.fillText(Math.floor(game.variables.unlockTime),1250,40)
-    ctx.fillText(Math.floor(performance.now()),1250,50)
+    ctx.fillText(game.sprites.cathedral.totalStonesToBuild,1250,30)
 
     //////////////////////////////////
     game.sprites.cathedral.draw()

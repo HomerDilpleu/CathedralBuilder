@@ -40,8 +40,7 @@ game = {
       levelGoal:50,
       levelGoldReward:1,
       unlockPhase:0,
-      unlockTime:0,
-      cathedralOffset:-1
+      unlockTime:0
     },
     music:{},
     utils:{},

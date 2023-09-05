@@ -18,6 +18,7 @@ game.sprites.cathedral.init = function() {
     this.structure = []
     this.curStone = 0
     this.builtStones = 0
+    this.totalStonesToBuild = 0
     // Canvas
     this.canvas110= {ctx:{}, htmlRef: {}}
     this.canvas90= {ctx:{}, htmlRef: {}}
