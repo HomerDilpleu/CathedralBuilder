@@ -24,26 +24,8 @@ game.scenes.main.update = function() {
     //////////// TO REMOVE ////////////////
 //    v.unlockPhase = 8
 //    v.goldStock = 2000
-//   game.sprites.cathedral.buildStones(10)
-//    v.stoneBuilt+=10
+//   game.sprites.cathedral.buildStones(50)
+//    v.stoneBuilt+=50
     ///////////////////////////////////////
-
-    // Change offset and Cathedral position depending on number of built stones
-    if (v.cathedralOffset == -1) {
-        v.cathedralOffset = 110
-        s.cathedral.changeOffSet(v.cathedralOffset)
-    }
-    if (v.cathedralOffset == 110 && v.stoneBuilt>=800) {
-        v.cathedralOffset = 90
-        s.cathedral.changeOffSet(v.cathedralOffset)
-    }
-    if (v.cathedralOffset == 90 && v.stoneBuilt>=5500) {
-        v.cathedralOffset = 50
-        s.cathedral.changeOffSet(v.cathedralOffset)
-    }
-    if (v.cathedralOffset == 50 && v.stoneBuilt>=16000) {
-        v.cathedralOffset = 0
-        s.cathedral.changeOffSet(v.cathedralOffset)
-    }
 
 }

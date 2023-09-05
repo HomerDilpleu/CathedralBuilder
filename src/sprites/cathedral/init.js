@@ -19,12 +19,16 @@ game.sprites.cathedral.init = function() {
     this.curStone = 0
     this.builtStones = 0
     // Canvas
-    this.canvas= {ctx:{}, htmlRef: {}}
-    // Camera offset
-    this.offSet = 110
+    this.canvas110= {ctx:{}, htmlRef: {}}
+    this.canvas90= {ctx:{}, htmlRef: {}}
+    this.canvas50= {ctx:{}, htmlRef: {}}
+    this.canvas0= {ctx:{}, htmlRef: {}}
 
     // Create the rendering canvas
-    this.createCanvas()
+    this.createCanvas('canvas110')
+    this.createCanvas('canvas90')
+    this.createCanvas('canvas50')
+    this.createCanvas('canvas0')
 
     // Define Cathedral structure
     this.defineStructure()
