@@ -2,16 +2,19 @@
 // Start scene 
 //////////////////////
 game.scenes.boot.start = function() {
-    game.sprites.cathedral.init()
-    game.sprites.click.init()
-    game.sprites.build.init()
-    game.sprites.booster.init()
-    game.sprites.stock.init()
-    game.sprites.date.init()
-    game.sprites.play.init()
-    game.sprites.level.init()
-    game.sprites.tuto.init()
-    game.sprites.bonus.init()
+    // Shortcuts
+    let s = game.sprites
+    s.cathedral.init()
+    s.click.init()
+    s.build.init()
+    s.booster.init()
+    s.stock.init()
+    s.date.init()
+    s.play.init()
+    s.level.init()
+    s.tuto.init()
+    s.bonus.init()
+    s.gameOver.init()
     // Music
     game.music.createMusic()
 }

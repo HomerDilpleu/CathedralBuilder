@@ -4,13 +4,12 @@
 game.scenes.main.draw = function() {
     /////////// A ENLEVER ////////////
     // Cadre du jeu
-    let ctx = mge._canvas._renderContext
+    //let ctx = mge._canvas._renderContext
     //ctx.strokeStyle = 'black'
     //ctx.strokeRect(0,0,mge.game.width, mge.game.height)
     // FPS
-    ctx.fillText(Math.floor(mge.game.fps),1250,20)
-    ctx.fillText(game.sprites.cathedral.totalStonesToBuild,1250,30)
-
+    //ctx.fillText(Math.floor(mge.game.fps),1250,20)
+    //ctx.fillText(game.sprites.cathedral.totalStonesToBuild,1250,30)
     //////////////////////////////////
     game.sprites.cathedral.draw()
     game.sprites.click.cloneExecuteForEach('draw')
@@ -21,5 +20,6 @@ game.scenes.main.draw = function() {
     game.sprites.build.draw()
     game.sprites.level.draw()
     game.sprites.tuto.draw()
+    game.sprites.gameOver.draw()
     
 }

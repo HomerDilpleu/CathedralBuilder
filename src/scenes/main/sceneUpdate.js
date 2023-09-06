@@ -6,6 +6,10 @@ game.scenes.main.update = function() {
     let s = game.sprites
     let v = game.variables
 
+    // Check if game over
+    if (v.year>=1300 || v.stoneBuilt >= game.sprites.cathedral.totalStonesToBuild) {
+        s.gameOver.update()
+    } else {
     // Check things to unlock
     this.unlockPhase()
 
@@ -20,6 +24,8 @@ game.scenes.main.update = function() {
     s.build.update()
     s.level.update()
     s.tuto.update()
+    }
+
 
     //////////// TO REMOVE ////////////////
 //    v.unlockPhase = 8
