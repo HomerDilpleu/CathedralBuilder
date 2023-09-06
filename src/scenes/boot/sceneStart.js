@@ -15,6 +15,7 @@ game.scenes.boot.start = function() {
     s.tuto.init()
     s.bonus.init()
     s.gameOver.init()
+    s.particle.init()
     // Music
     game.music.createMusic()
 }

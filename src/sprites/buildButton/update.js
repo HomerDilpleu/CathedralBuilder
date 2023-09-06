@@ -21,5 +21,7 @@ game.sprites.build.update = function (ctx) {
         v.stoneStock-=speed    
         v.stoneBuilt+=speed    
         this.lastClick = now
+        // particles
+        game.sprites.particle.create(300,150,1,8,12)
     }
 }

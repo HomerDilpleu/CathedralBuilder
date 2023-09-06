@@ -18,6 +18,7 @@ game.scenes.main.update = function() {
     s.booster.cloneExecuteForEach('update')
     s.stock.cloneExecuteForEach('update')
     s.bonus.cloneExecuteForEach('update')
+    s.particle.cloneExecuteForEach('update')
 
     s.cathedral.update()
     s.date.update()

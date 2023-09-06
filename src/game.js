@@ -17,7 +17,8 @@ game = {
       level: mge.game.createSprite(),
       tuto: mge.game.createSprite(),
       bonus: mge.game.createSprite(),
-      gameOver: mge.game.createSprite()
+      gameOver: mge.game.createSprite(),
+      particle: mge.game.createSprite()
     },
     variables:{
       rockStock:0,

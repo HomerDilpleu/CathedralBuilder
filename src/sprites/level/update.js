@@ -31,7 +31,11 @@ game.sprites.level.update = function (ctx) {
         // Update level
         v.level+=1
         // Define new level goal and new reward
-        v.levelGoal = Math.ceil(v.levelGoal*1.5/100)*100
-        v.levelGoldReward = Math.ceil(v.levelGoldReward*1.1)
+        if (v.level==15) {v.levelGoal = 34570} else {
+            v.levelGoal = Math.ceil(v.levelGoal*1.5/100)*100
+            v.levelGoldReward = Math.ceil(v.levelGoldReward*1.1)
+        }
+        // Particles
+        game.sprites.particle.create(900,100,50,-3,3)
     }
 }
