@@ -4,8 +4,6 @@ game.sprites.bonus.create = function(type,nb) {
     let u = game.utils
 
     let bonus = this.cloneCreate()
-    //bonus.color = u.getRandomItem(['red','blue','green'])
-    bonus.color = u.getRandomItem(['red','blue'])
     bonus.xSpeed = u.getRandomNumber(-3,3)
     if(bonus.xSpeed == 0) {bonus.xSpeed=1}
     bonus.ySpeed = u.getRandomNumber(-3,3)
@@ -14,5 +12,5 @@ game.sprites.bonus.create = function(type,nb) {
     bonus.y = 200
     bonus.type = type
     bonus.nb = nb
-    bonus.text = type
+    bonus.text = type.toUpperCase()
 }

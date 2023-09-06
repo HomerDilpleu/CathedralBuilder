@@ -2,13 +2,12 @@
 // Draw scene
 //////////////////////
 game.scenes.main.draw = function() {
-    /////////// A ENLEVER ////////////
-    // Cadre du jeu
-    let ctx = mge._canvas._renderContext
+    /////////// TO REMOVE ////////////
+    //let ctx = mge._canvas._renderContext
     //ctx.strokeStyle = 'black'
     //ctx.strokeRect(0,0,mge.game.width, mge.game.height)
     // FPS
-    ctx.fillText(Math.floor(mge.game.fps),1250,20)
+    //ctx.fillText(Math.floor(mge.game.fps),1250,20)
     //ctx.fillText(game.sprites.cathedral.totalStonesToBuild,1250,30)
     //////////////////////////////////
     game.sprites.cathedral.draw()
@@ -22,5 +21,4 @@ game.scenes.main.draw = function() {
     game.sprites.level.draw()
     game.sprites.tuto.draw()
     game.sprites.gameOver.draw()
-    
 }

@@ -1,26 +1,11 @@
 game.sprites.bonus.drawFunction = function (ctx) {
 
-    // Red
-    let light = '#FF9999'
-    let medium1 = '#FF6666'
-    let medium2 = '#FF3333'
-    let medium3 = '#CC0000'
-    let dark = '#990000'
-
-    if (this.color == 'blue') {
-        light = '#99CCFF'
-        medium1 = '#66B2FF'
-        medium2 = '#3399FF'
-        medium3 = '#0066CC'
-        dark = '#004C99'
-    } else if (this.color == 'green') {
-        light = '#99FF99'
-        medium1 = '#66FF66'
-        medium2 = '#33FF33'
-        medium3 = '#00CC00'
-        dark = '#009900'
-    }
-
+    // Colors
+    let light = '#B0A29B'
+    let medium1 = '#9D8B82'
+    let medium2 = '#856F63'
+    let medium3 = '#674B3C'
+    let dark = '#411F0C'
     // Draw
     ctx.fillStyle=light
     ctx.fill(this.upLeft)
