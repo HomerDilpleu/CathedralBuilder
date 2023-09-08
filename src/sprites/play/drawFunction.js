@@ -20,4 +20,11 @@ game.sprites.play.drawFunction = function (ctx) {
     ctx.textAlign = "center"
     ctx.fillStyle=light
     ctx.fillText('Play', w/2, h/2 + 5)
+
+    // JS13K Reference
+    ctx.fillStyle=dark
+    ctx.font = "24px serif"
+    ctx.textAlign = "center"
+    ctx.fillText('A game created for JS13K 2023 game challenge', 70, -50)
+    
 }
