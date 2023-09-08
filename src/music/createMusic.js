@@ -11,13 +11,13 @@ game.music.createMusic = function() {
     let a1F = ['F2',0.5,'A2',0.5,'C3',0.5,'C3',1.5,'F3',1]
 
     let a1Intro = []
-    a1Intro.push(restBar,a1Am,a1Bdim,a1Am,a1Bdim)
+    a1Intro.push(a1Am,a1Bdim,a1Am,a1Bdim)
 
     let a1SectionA = []
     a1SectionA.push(a1Am,a1Bdim,a1Am,a1Bdim,a1E7,a1F,a1E7,a1Am)
 
     let a1SectionB = []
-    a1SectionA.push(a1Am,a1Dm,a1Am,a1Dm,a1Am,a1E7,['A2',0.5,'C3',0.5,'E3',0.5,'A3',0.5,'C4',1,'E4',1])
+    a1SectionA.push(a1Am,a1Dm,a1Am,a1Dm,a1Am,a1E7,['A2',0.5,'C3',0.5,'E3',0.5,'A3',0.5,'C4',1,'A3',1])
 
     game.music.a1Bars = [].concat(a1Intro,a1SectionA,a1SectionB)
 
@@ -29,7 +29,7 @@ game.music.createMusic = function() {
     let a2F = ['r',1.5,'F3',1.5]
 
     let a2Intro = []
-    a2Intro.push(restBar,a2Am,a2Bdim,a2Am,a2Bdim)
+    a2Intro.push(a2Am,a2Bdim,a2Am,a2Bdim)
 
     let a2SectionA = []
     a2SectionA.push(a2Am,a2Bdim,a2Am,a2Bdim,a2E7,a2F,a2E7,a2Am)
@@ -47,7 +47,7 @@ game.music.createMusic = function() {
     let a3F = ['r',1.5,'A3',1.5]
 
     let a3Intro = []
-    a3Intro.push(restBar,a3Am,a3Bdim,a3Am,a3Bdim)
+    a3Intro.push(a3Am,a3Bdim,a3Am,a3Bdim)
 
     let a3SectionA = []
     a3SectionA.push(a3Am,a3Bdim,a3Am,a3Bdim,a3E7,a3F,a3E7,a3Am)
@@ -61,10 +61,9 @@ game.music.createMusic = function() {
     let bAm = ['A1',1.5,'A1',1.5,'A1',1]
     let bDm = ['F1',1.5,'F1',1.5,'F1',1]
     let bE7 = ['E1',1.5,'E1',1.5,'E1',1]
-    let br  = ['r',4]
 
     let bIntro = []
-    bIntro.push(restBar,restBar,restBar,restBar,restBar)
+    bIntro.push(restBar,restBar,restBar,restBar)
     
     let bSectionA = []
     bSectionA.push(restBar,restBar,restBar,restBar,restBar,restBar,restBar,restBar)
@@ -75,7 +74,7 @@ game.music.createMusic = function() {
     game.music.bBars = [].concat(bIntro,bSectionA,bSectionB)
 
     // Lead
-    let lIntro = [restBar,restBar,restBar,restBar,['r',2.5,'E4',0.5,'A4',0.5,'Ab4',0.5]]
+    let lIntro = [restBar,restBar,restBar,['r',2.5,'E4',0.5,'A4',0.5,'Ab4',0.5]]
     let lSectionA = [['B4',1.5,'C5',1,'E4',0.5,'C5',0.5,'B4',0.5],
                      ['Ab4',1.5,'A4',1,'C5',0.5,'B4',0.5,'Ab4',0.5],
                      ['E4',4],
