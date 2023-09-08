@@ -19,11 +19,10 @@ game.sprites.level.update = function (ctx) {
             bonus.create('gold',10)
         } else if (v.level == 4) {
         } else {
-            let type = rdm(['rock','stone','gold',,'autoclick'])
+            let type = rdm(['rock','stone','gold','autoclick'])
             if(type == 'rock') {bonus.create('rock',v.rockProduction * 5)}
             if(type == 'stone') {bonus.create('stone',v.stoneProduction * 5)}
             if(type == 'gold') {bonus.create('gold',v.goldProduction * 5)}
-            //if(type == 'build') {bonus.create('build',v.buildSpeed * 5)}
             if(type == 'autoclick') {bonus.create('autoclick',10000)}
         }
         // Increase cathedral build
