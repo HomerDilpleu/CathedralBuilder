@@ -16,12 +16,12 @@ game.sprites.gameOver.drawFunction = function (ctx) {
     ctx.textAlign = "center"
     if (v.year>=1300) {
         ctx.fillText('GAME OVER', this.width/2, this.height/2 -70)
-        ctx.font = "30px serif"
+        ctx.font = "25px serif"
         ctx.fillText('You were not able to build the cathedral', this.width/2, this.height/2 - 5)
         ctx.fillText('in less than 100 years!', this.width/2, this.height/2 + 35)
     } else {
         ctx.fillText('CONGRATULATIONS!', this.width/2, this.height/2 -70)
-        ctx.font = "30px serif"
+        ctx.font = "25px serif"
         ctx.fillText('You were able to build the catheral', this.width/2, this.height/2 - 5)
         ctx.fillText('in less than 100 years!', this.width/2, this.height/2 + 35)
     }
