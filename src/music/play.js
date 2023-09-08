@@ -13,7 +13,7 @@ game.music.play = function() {
     mge.sequencer.createTrack(a1Bars,instrument,0.85)
     mge.sequencer.createTrack(a2Bars,instrument,0.85)
     mge.sequencer.createTrack(a3Bars,instrument,0.85)
-    mge.sequencer.createTrack(bBars,instrument,1)
+    mge.sequencer.createTrack(bBars,instrument,0.9)
     mge.sequencer.createTrack(lBars,instrument,0.8)
     mge.sequencer.bpm = 110
     mge.sequencer.start()

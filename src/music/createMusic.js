@@ -59,8 +59,8 @@ game.music.createMusic = function() {
     
     // Bass
     let bAm = ['A1',1.5,'A1',1.5,'A1',1]
-    let bDm = ['F1',1.5,'F1',1.5,'F1',1]
-    let bE7 = ['E1',1.5,'E1',1.5,'E1',1]
+    let bDm = ['F2',1.5,'F2',1.5,'F2',1]
+    let bE7 = ['E2',1.5,'E2',1.5,'E2',1]
 
     let bIntro = []
     bIntro.push(restBar,restBar,restBar,restBar)
