@@ -25,6 +25,6 @@ game.sprites.play.drawFunction = function (ctx) {
     ctx.fillStyle=dark
     ctx.font = "24px serif"
     ctx.textAlign = "center"
-    ctx.fillText('A game created for JS13K 2023 game challenge', 70, -50)
+    ctx.fillText('A game created for JS13K 2023 challenge', 70, -50)
     
 }

@@ -18,7 +18,8 @@ game = {
       tuto: mge.game.createSprite(),
       bonus: mge.game.createSprite(),
       gameOver: mge.game.createSprite(),
-      particle: mge.game.createSprite()
+      particle: mge.game.createSprite(),
+      logo: mge.game.createSprite()
     },
     variables:{
       rockStock:0,
