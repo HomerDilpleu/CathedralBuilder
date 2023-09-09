@@ -10,24 +10,24 @@ game.sprites.play.drawFunction = function (ctx) {
     ctx.fillStyle=dark
     ctx.font = "100px serif"
     ctx.textAlign = "center"
-    ctx.fillText('CATHEDRAL', 70, -270)
-    ctx.fillText('BUILDER', 70, -170)
+    ctx.fillText('CATHEDRAL', 70, -175)
+    ctx.fillText('BUILDER', 70, -75)
 
     // Draw Cathedral
-    ctx.drawImage(game.sprites.cathedral.canvas0.htmlRef, -610, -60)
+    ctx.drawImage(game.sprites.cathedral.canvas0.htmlRef, -610, 35)
 
     // Draw button
     ctx.fillStyle=dark
-    ctx.fillRect(0,-90,w,h)
+    ctx.fillRect(0,0,w,h)
     ctx.font = "20px serif"
     ctx.textAlign = "center"
     ctx.fillStyle=light
-    ctx.fillText('Play', w/2, h/2 + 5-90)
+    ctx.fillText('Play', w/2, h/2 +5)
 
     // JS13K Reference
     ctx.fillStyle=dark
     ctx.font = "24px serif"
     ctx.textAlign = "center"
-    ctx.fillText('A game created for JS13K 2023', 70, -120)
+    ctx.fillText('A game created for JS13K 2023', 70, -30)
     
 }

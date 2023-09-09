@@ -4,7 +4,7 @@ game.sprites.play.init = function() {
     this.width = 120
     this.height = 50
     this.x = 660
-    this.y = 400
+    this.y = 305
     //this.drawBoundaries=true
 
     // Draw cathedral

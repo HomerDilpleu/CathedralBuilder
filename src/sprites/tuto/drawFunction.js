@@ -14,12 +14,16 @@ game.sprites.tuto.drawFunction = function (ctx) {
         ctx.textAlign = "center"
         ctx.fillText('13th CENTURY', this.width/2, this.height/2)
         ctx.fillText('GOLDEN AGE OF CATHEDRALS', this.width/2, this.height/2+50)
+        ctx.font = "16px serif"
+        ctx.fillText('Click to continue', this.width/2, this.height/2+100)
     }
 
     if (v.unlockPhase == 0.1) {
         ctx.textAlign = "center"
         ctx.fillText('WILL YOU BE ABLE TO BUILD A CATHEDRAL', this.width/2, this.height/2)
         ctx.fillText('IN LESS THAN 100 YEARS?', this.width/2, this.height/2+50)
+        ctx.font = "16px serif"
+        ctx.fillText('Click to continue', this.width/2, this.height/2+100)
     }
 
     if (v.unlockPhase == 1) {
