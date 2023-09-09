@@ -4,10 +4,10 @@ game.sprites.logo.init = function() {
     this.width = 400
     this.height = 400
 //    this.drawBoundaries=true
-    this.x = 658
-    this.y = 580
-    this.scaleX = 0.3
-    this.scaleY = 0.3
+    this.x = 660
+    this.y = 650
+    this.scaleX = 0.15
+    this.scaleY = 0.15
 
     //
     // Define paths

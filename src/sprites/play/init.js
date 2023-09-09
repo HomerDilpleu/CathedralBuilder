@@ -6,4 +6,8 @@ game.sprites.play.init = function() {
     this.x = 660
     this.y = 400
     //this.drawBoundaries=true
+
+    // Draw cathedral
+    game.sprites.cathedral.buildStones(2382)
+
 }
